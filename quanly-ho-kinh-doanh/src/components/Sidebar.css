@@ -1,0 +1,60 @@
+/* Thanh navbar ngang */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #1e63c3;
+  padding: 8px 0;
+  gap: 40px;
+}
+
+/* Nút chính của dropdown */
+.dropbtn {
+  background-color: #1e63c3;
+  color: white;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Khi hover đổi màu nền */
+.dropbtn:hover {
+  background-color: #1556a4;
+}
+
+/* Khối dropdown (ẩn các menu con) */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Các liên kết bên trong dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Các link bên trong menu xổ xuống */
+.dropdown-content a {
+  color: #1e63c3;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Khi hover vào menu chính, hiện menu con */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
